@@ -28,7 +28,7 @@
         <button class="btn btn-primary" id="1" onclick="input(id)" type="button">1</button>
         <button class="btn btn-primary" id="2" onclick="input(id)" type="button">2</button>
         <button class="btn btn-primary" id="3" onclick="input(id)" type="button">3</button>
-        <button class="btn btn-danger"  id="clearScreen" onclick="clear()" type="button">C</button>
+        <button class="btn btn-danger"  id="reset" onclick="clearCalc()" type="button">C</button>
       </div>
 
       <!-- Second row -->
@@ -65,6 +65,12 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
     <script src="js/calculator.js"></script>
+<script>
+
+$( "#calc" ).hide( 500 ).delay( 1500 ).show( 300 );
+
+</script>
+
 
 </body>
 </html>

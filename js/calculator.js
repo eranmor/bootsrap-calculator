@@ -4,7 +4,7 @@ function input(id) {
 }
 
 // Clears screen
-function clear() {
+function clearCalc() {
   document.calc.result.value="";
 }
 
