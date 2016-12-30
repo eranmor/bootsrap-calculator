@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>calculator</title>
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container col-sm-2 text-center" id="calc">
+
+      <div class="row" id="result">
+        <form name="calc">
+          <input type="text" class="screen text-right" name="result" placeholder="0" readonly>
+        </form>
+      </div>
+
+
+    <!-- First row -->
+      <div class = "row">
+        <button class="btn btn-primary" id="1" onclick="input(id)" type="button">1</button>
+        <button class="btn btn-primary" id="2" onclick="input(id)" type="button">2</button>
+        <button class="btn btn-primary" id="3" onclick="input(id)" type="button">3</button>
+        <button class="btn btn-danger"  id="clearScreen" onclick="clear()" type="button">C</button>
+      </div>
+
+      <!-- Second row -->
+      <div class = "row">
+        <button class="btn btn-primary" id="4" onclick="input(id)" type="button">4</button>
+        <button class="btn btn-primary" id="5" onclick="input(id)" type="button">5</button>
+        <button class="btn btn-primary" id="6" onclick="input(id)" type="button">6</button>
+        <button class="btn btn-warning" id="+" onclick="input(this.id)" type="button">+</button>
+      </div>
+
+      <!-- Third row -->
+      <div class = "row">
+        <button class="btn btn-primary" id="7" onclick="input(id)" type="button">7</button>
+        <button class="btn btn-primary" id="8" onclick="input(id)" type="button">8</button>
+        <button class="btn btn-primary" id="9" onclick="input(id)" type="button">9</button>
+        <button class="btn btn-warning" id="-" onclick="input(this.id)" type="button">-</button>
+      </div>
+
+      <!-- Fourth row-->
+      <div class = "row">
+        <button class="btn btn-primary" id="0" onclick="input(id)" type="button">0</button>
+        <button class="btn btn-primary" id="." onclick="input(id)" type="button">.</button>
+        <button class="btn btn-warning" id="/" onclick="input(this.id)" type="button">/</button>
+        <button class="btn btn-warning" id="*" onclick="input(this.id)" type="button">*</button>
+      </div>
+
+      <div class="row">
+        <button class="btn btn-success btn-lg" type="button" id="equals" onclick="calculate()">=</button>
+      </div>
+
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/calculator.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+.btn {
+
+  margin: 2px;
+  padding: 10px 10px 10px 10px ;
+  width: 40px;
+  font-weight:bold;
+  }
+
+.container {
+
+  background: black;
+}
+
+.screen {
+
+  padding:2px;
+  margin: 10px;
+}
